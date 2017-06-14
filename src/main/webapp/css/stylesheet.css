@@ -1,0 +1,133 @@
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#168be5+0,1e5799+100 */
+    background: rgb(22,139,229); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(22,139,229,1) 0%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(22,139,229,1) 0%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(22,139,229,1) 0%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#168be5', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 100;
+}
+
+.navbar {
+    color: rgb(50, 51, 49);
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    font-size: 25px;
+
+}
+
+.navbar:hover {
+    color: rgb(22,139,229);
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    font-size: 25px;
+    transition: ease 2s;
+
+}
+
+.navbar-brand {
+    font-size: 25px;
+
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.errormsg {
+    color: #ff4d52;
+    text-align: center;
+    font-size: 25px;
+}
+
+hr {
+    border-color: #333333;
+}
+
+.container, .form-container{
+    max-width: 500px;
+    padding: 15px 20px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 50px;
+    cursor: default;
+}
+
+.form-container {
+    background-color: #e5d4a5;
+    padding: 1px 25px 20px;
+    /*margin: 0 auto 25px;*/
+    /*margin-top: 150px;*/
+    border-radius: 20px;
+    box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.5);
+}
+
+#username,
+#email,
+#password,
+#confirm {
+    text-align: center;
+    direction: ltr;
+    height: 45px;
+    font-size: 25px;
+}
+
+input[name=username],
+input[name=password],
+input[name=email],
+input[name=confirm],
+button {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control {
+    border-radius: 30px;
+}
+
+.form-control {
+    color: #1b68b2;
+    border-radius: 30px;
+}
+
+.btn.btn-signin {
+    background-color: rgb(85, 96, 101);
+    padding: 0px;
+    font-weight: 100;
+    font-size: 25px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    transition: all 1s;
+}
+
+.btn.btn-signin:hover {
+    background-color: rgb(22,139,229);
+    padding: 0px;
+    font-weight: 100;
+    font-size: 25px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    transition: all 1s;
+}
