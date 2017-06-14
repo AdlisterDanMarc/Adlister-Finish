@@ -94,8 +94,14 @@ hr {
 }
 
 #title,
-#username {
-    font-weight:300;
+#username{
+    font-weight: 300;
+}
+
+#description {
+    direction: ltr;
+    height: 250px;
+    font-size: 20px;
 }
 
 #description {
@@ -108,6 +114,9 @@ input[name=username],
 input[name=password],
 input[name=email],
 input[name=confirm],
+input[name=title],
+input[name=phone],
+input[name=description],
 button {
     width: 100%;
     display: block;
@@ -147,12 +156,14 @@ button {
     border: none;
     transition: all 1s;
 }
-/* AD boxes */
+
+/* --- Ad Boxes --- */
 
 .col-md-6 {
     width: 70%;
-    height: 50% ;
+    height: 70%;
     background-color: white;
-    margin: 70px;
+    margin: 2px;
     text-align: center;
+
 }

@@ -29,7 +29,6 @@ public class ListAdsDao implements Ads {
 
     private List<Ad> generateAds() {
         List<Ad> ads = new ArrayList<>();
-        //THIS was hardcoded--not needed now that dbase in place
 //        ads.add(new Ad(
 //            1,
 //            1,

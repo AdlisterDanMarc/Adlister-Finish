@@ -49,11 +49,10 @@ public class LoginServlet extends HttpServlet {
         if (attempt) {
             // TODO: store the logged in user object in the session, instead of just the username
             HttpSession session = request.getSession();
-            session.setAttribute("user" ,userLogin.getUsername());
-            session.setAttribute("id", userLogin.getId());
-            session.setAttribute("isLoggedIn", true);
-
-            System.out.println((userLogin.getId()));
+            System.out.println(userLogin.getUsername());
+           session.setAttribute("user", userLogin);
+           session.setAttribute("id", userLogin.getId());
+           session.setAttribute("isLoggedIn", true);
             response.sendRedirect("/ads");
         } else {
             request.setAttribute("passworderror", "Password incorrect!");
