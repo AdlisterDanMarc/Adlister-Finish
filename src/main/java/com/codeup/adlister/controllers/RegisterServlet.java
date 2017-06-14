@@ -38,7 +38,7 @@ public class RegisterServlet extends HttpServlet {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            response.sendRedirect("/register");
+            response.sendRedirect("/login");
         }else{
             request.setAttribute("error", "Passwords do not match!");
             request.getRequestDispatcher("/WEB-INF/register.jsp")

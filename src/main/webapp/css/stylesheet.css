@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-weight: 100;
+    letter-spacing: 2px;
 }
 
 .navbar {
@@ -81,17 +82,34 @@ hr {
 #username,
 #email,
 #password,
-#confirm {
+#confirm,
+#title,
+#phone {
     text-align: center;
     direction: ltr;
     height: 45px;
     font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#title,
+#username{
+    font-weight: 300;
+}
+
+#description {
+    direction: ltr;
+    height: 250px;
+    font-size: 20px;
 }
 
 input[name=username],
 input[name=password],
 input[name=email],
 input[name=confirm],
+input[name=title],
+input[name=phone],
+input[name=description],
 button {
     width: 100%;
     display: block;
@@ -130,4 +148,15 @@ button {
     border-radius: 30px;
     border: none;
     transition: all 1s;
+}
+
+/* --- Ad Boxes --- */
+
+.col-md-6 {
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    margin: 2px;
+    text-align: center;
+
 }

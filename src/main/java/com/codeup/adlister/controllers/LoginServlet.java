@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "controllers.LoginServlet", urlPatterns = "/login")
@@ -47,10 +48,12 @@ public class LoginServlet extends HttpServlet {
 
         if (attempt) {
             // TODO: store the logged in user object in the session, instead of just the username
-            request.getSession().setAttribute("user", username);
-            request.getSession().setAttribute("id", userLogin.getId());
-            System.out.println((userLogin.getId()));
-            response.sendRedirect("/profile");
+            HttpSession session = request.getSession();
+            System.out.println(userLogin.getUsername());
+           session.setAttribute("user", userLogin);
+           session.setAttribute("id", userLogin.getId());
+           session.setAttribute("isLoggedIn", true);
+            response.sendRedirect("/ads");
         } else {
             request.setAttribute("passworderror", "Password incorrect!");
             request.getRequestDispatcher("/WEB-INF/login.jsp")
