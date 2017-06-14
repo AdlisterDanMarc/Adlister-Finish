@@ -48,6 +48,8 @@ public class LoginServlet extends HttpServlet {
         if (attempt) {
             // TODO: store the logged in user object in the session, instead of just the username
             request.getSession().setAttribute("user", username);
+            request.getSession().setAttribute("id", userLogin.getId());
+            System.out.println((userLogin.getId()));
             response.sendRedirect("/profile");
         } else {
             request.setAttribute("passworderror", "Password incorrect!");
