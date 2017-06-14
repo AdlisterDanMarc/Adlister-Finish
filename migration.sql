@@ -1,3 +1,5 @@
+
+
 USE adlister_db;
 
 DROP TABLE IF EXISTS ads;
@@ -16,6 +18,7 @@ CREATE TABLE ads (
     user_id INT UNSIGNED NOT NULL,
     title VARCHAR(240) NOT NULL,
     description TEXT NOT NULL,
+    phone VARCHAR(25) Not Null,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users(id)
         ON DELETE CASCADE

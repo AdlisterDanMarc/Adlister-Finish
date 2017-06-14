@@ -17,13 +17,15 @@ public class CreateAdServlet extends HttpServlet {
             .forward(request, response);
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws
+            IOException {
 
 
         Ad ad = new Ad(
                 Long.parseLong(request.getSession().getAttribute("id").toString()),
             request.getParameter("title"),
-            request.getParameter("description")
+            request.getParameter("description"),
+            request.getParameter("phone")
         );
         DaoFactory.getAdsDao().insert(ad);
         response.sendRedirect("/ads");
