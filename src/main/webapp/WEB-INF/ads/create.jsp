@@ -9,7 +9,7 @@
 
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
-    <div class="container">
+    <div class="overlap-form-container text-center">
         <div class="form-container">
             <h1>Create a new Ad</h1>
             <hr>

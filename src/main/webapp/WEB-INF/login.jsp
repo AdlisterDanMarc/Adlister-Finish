@@ -8,7 +8,7 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
- <div class="container">
+ <div class="overlap-form-container text-center">
 
     <div class="form-container">
 
