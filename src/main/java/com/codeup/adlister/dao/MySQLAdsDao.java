@@ -82,4 +82,17 @@ public class MySQLAdsDao implements Ads {
         }
         return ads;
     }
+
+    public List<Ad> searchResult(String searchTerm) {
+        PreparedStatement statement = null;
+        try {
+            statement = connection.prepareStatement("SELECT * FROM ads WHERE title = ?");
+            statement.setString(1, searchTerm);
+            statement.executeQuery();
+            ResultSet rs = statement.getResultSet();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error retrieving your request", e);
+        }
+    }
 }
