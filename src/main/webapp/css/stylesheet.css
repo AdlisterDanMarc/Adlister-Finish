@@ -59,9 +59,10 @@ hr {
     border-color: #333333;
 }
 
-.container, .form-container{
+.overlap-form-container, .form-container{
     max-width: 500px;
     padding: 15px 20px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -103,12 +104,6 @@ hr {
     height: 250px;
     font-size: 20px;
 }
-
-#description {
-    direction: ltr;
-    height: 250px;
-    font-size: 25px;
-    }
 
 input[name=username],
 input[name=password],
@@ -167,6 +162,7 @@ button {
 #searchbtn {
     height: 30px;
     margin-top: 3px;
+    transition: ease 1s;
 }
 
 #searchbtn:hover {
@@ -179,11 +175,21 @@ button {
 
 /* --- Ad Boxes --- */
 
-.col-md-6 {
-    width: 70%;
-    height: 70%;
-    background-color: white;
-    margin: 2px;
+.w3-card-4 {
+    /*width: 300px;*/
     text-align: center;
+    /*margin: -15px;*/
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.55);
+}
 
+.descriptionbox {
+    width: auto;
+}
+
+#descriptionp {
+    height: 130px;
+    overflow-y: auto;
 }
