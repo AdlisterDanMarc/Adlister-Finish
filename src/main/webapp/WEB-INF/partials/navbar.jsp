@@ -5,8 +5,18 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="/ads">Adlister</a>
         </div>
+
+        <div class="col-sm-3 col-md-3" id="searchbar">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" id="searchbtn"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
         <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
             <c:if test="${!sessionScope.isLoggedIn}">
             <li><a href="/login">Login</a></li>
             <li><a href="/register">Register</a></li>
@@ -18,20 +28,6 @@
             <li><a href="/ads/create">Create Ad</a></li>
             </c:if>
         </ul>
-=======
-
-            <c:if test="${!sessionScope.isLoggedIn}">
-                 <li><a href="/login">Login</a></li>
-                 <li><a href="/register">Register</a></li>
-
-            </c:if>
-
-            <c:if test="${sessionScope.isLoggedIn}">
-                <li><a href="/logout">Logout</a></li>
-                <li><a href="/ads/create">Create Ad</a></li>
-            </c:if>
-    </ul>
->>>>>>> ea4a9cc13a10674f680929775485e68e5ae8f0d1
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

@@ -157,6 +157,26 @@ button {
     transition: all 1s;
 }
 
+/* -- SEARCHBAR -- */
+
+#srch-term {
+    height: 30px;
+    margin-top: 3px;
+}
+
+#searchbtn {
+    height: 30px;
+    margin-top: 3px;
+}
+
+#searchbtn:hover {
+    height: 30px;
+    margin-top: 3px;
+    color: white;
+    background-color: #1b68b2;
+    transition: ease 1s;
+}
+
 /* --- Ad Boxes --- */
 
 .col-md-6 {
