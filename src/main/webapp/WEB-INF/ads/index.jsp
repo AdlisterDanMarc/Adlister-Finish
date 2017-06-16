@@ -24,9 +24,9 @@
                 <img src="https://www.w3schools.com/w3css/img_fjords.jpg" alt="Norway" style="width:100%">
                 <div class="w3-container w3-center descriptionbox">
                     <p id="descriptionp">${ad.description}</p>
-                    <hr>
                 </div>
                 <div class="w3-container w3-center">
+                    <hr>
                     <p>${ad.phone}</p>
                     <hr>
                 </div>

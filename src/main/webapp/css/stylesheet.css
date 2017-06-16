@@ -190,6 +190,8 @@ button {
 }
 
 #descriptionp {
-    height: 130px;
+    height: 120px;
     overflow-y: auto;
+    word-wrap: break-word;
+    margin-bottom: -20px;
 }
