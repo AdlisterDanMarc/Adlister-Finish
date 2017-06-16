@@ -21,12 +21,17 @@
                 <div class="w3-container w3-center w3-light-grey">
                     <p>${ad.title}</p>
                 </div>
-                <img src="https://www.w3schools.com/w3css/img_fjords.jpg" alt="Norway" style="width:100%">
+
+
+
+                <img src="/img/${ad.img}" style="width:100%" height="240px">
                 <div class="w3-container w3-center descriptionbox">
+
+
                     <p id="descriptionp">${ad.description}</p>
-                    <hr>
                 </div>
                 <div class="w3-container w3-center">
+                    <hr>
                     <p>${ad.phone}</p>
                     <hr>
                 </div>

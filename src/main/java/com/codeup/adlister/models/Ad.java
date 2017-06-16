@@ -6,20 +6,24 @@ public class Ad {
     private String title;
     private String description;
     private String phone;
+    private String img;
 
-    public Ad(long id, long userId, String title, String description, String phone) {
+    public Ad(long id, long userId, String title, String description, String phone, String img) {
         this.id = id;
         this.userId = userId;
         this.title = title;
         this.description = description;
         this.phone = phone;
+        this.img = img;
+
     }
 
-    public Ad(long userId, String title, String description, String phone) {
+    public Ad(long userId, String title, String description, String phone, String img) {
         this.userId = userId;
         this.title = title;
         this.description = description;
         this.phone = phone;
+        this.img = img;
     }
 
     public String getPhone() {
@@ -60,5 +64,13 @@ public class Ad {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

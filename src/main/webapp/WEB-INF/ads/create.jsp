@@ -13,12 +13,20 @@
         <div class="form-container">
             <h1>Create a new Ad</h1>
             <hr>
-        <form action="/ads/create" method="post">
+        <form action="/ads/create" method="post" enctype="multipart/form-data">
 
             <div class="form-group">
                 <label for="title">Title</label>
                 <input id="title" name="title" class="form-control" type="text" required>
             </div>
+
+            <div>
+                <p class="imgsuccess">${imgsuccess}</p>
+                <label for="img">Image Upload</label>
+                <input type="file" onchange="imgchange(event)" name="file"  id="img">
+                <img id="images" />
+            </div>
+
             <div class="form-group">
                 <label for="phone">Phone Number</label>
                 <input id="phone" name="phone" class="form-control" type="text" required>
@@ -35,5 +43,12 @@
       </div>
     </div>
     </div>
+<script>
+
+    function imgchange(event){
+        $('#images').val(event.target.files[0].name);
+    }
+
+</script>
 </body>
 </html>
