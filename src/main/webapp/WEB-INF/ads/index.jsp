@@ -24,7 +24,7 @@
 
 
 
-                <img src="/img/${ad.img}" style="width:100%" height="250px">
+                <img src="/img/${ad.img}" style="width:100%" height="240px">
                 <div class="w3-container w3-center descriptionbox">
 
 

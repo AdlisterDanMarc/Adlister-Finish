@@ -5,14 +5,14 @@
 
         <c:if test="${!sessionScope.isLoggedIn}">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/login">Adlister</a>
+                <a class="navbar-brand" href="/login">Bad Dog</a>
             </div>
         </c:if>
 
 
         <c:if test="${sessionScope.isLoggedIn}">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/ads">Adlister</a>
+                <a class="navbar-brand" href="/ads">Bad Dog</a>
             </div>
         </c:if>
 

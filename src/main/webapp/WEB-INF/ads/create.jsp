@@ -46,7 +46,7 @@
 <script>
 
     function imgchange(event){
-        $('#img').val(event.target.files[0].name);
+        $('#images').val(event.target.files[0].name);
     }
 
 </script>
