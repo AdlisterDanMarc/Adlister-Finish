@@ -7,7 +7,7 @@
         </div>
 
         <div class="col-sm-3 col-md-3" id="searchbar">
-            <form class="navbar-form" role="search">
+            <form action="/ads/results" class="navbar-form" role="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
                     <div class="input-group-btn">
